@@ -1,9 +1,9 @@
 <p align="center">
-    <img src="http://assets.laralabs.uk/images/logos/laralabs_logo_big.png" height="267px" width="182px" />
+    <img src="https://assets.laralabs.uk/packages/here-oauth2-client/here_client_logo.png" height="154px" width="141px" />
 </p>
 <p align="center">
-<a href="https://packagist.org/packages/laralabs/timezone"><img src="https://poser.pugx.org/laralabs/timezone/version" alt="Stable Build" /></a>
-<a href="https://travis-ci.org/Laralabs/timezone"><img src="https://travis-ci.org/Laralabs/timezone.svg?branch=master" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laralabs/here-api-oauth2-client"><img src="https://poser.pugx.org/laralabs/here-api-oauth2-client/version" alt="Stable Build" /></a>
+<a href="https://travis-ci.org/Laralabs/here-api-oauth2-client"><img src="https://travis-ci.org/Laralabs/here-api-oauth2-client.svg?branch=master" alt="Build Status"></a>
 <a href="https://codeclimate.com/github/Laralabs/here-api-oauth2-client/maintainability"><img src="https://api.codeclimate.com/v1/badges/c4e20b9e6d9fc66e949c/maintainability" /></a>
 <a href="https://codeclimate.com/github/Laralabs/here-api-oauth2-client/test_coverage"><img src="https://api.codeclimate.com/v1/badges/c4e20b9e6d9fc66e949c/test_coverage" /></a>
 </p>
