@@ -55,5 +55,8 @@
           "HereOAuth": "Laralabs\\HereOAuth\\Facades\\HereOAuth"
         }
       }
+    },
+    "config": {
+      "discard-changes": true
     }
   }
