@@ -1,0 +1,59 @@
+{
+    "name": "laralabs/here-api-oauth2-client",
+    "description": "Easily get an OAuth 2.0 access token to use with the HERE API services",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Matt Clinton",
+        "email": "matt@mattc.dev"
+      }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=7.1",
+      "guzzlehttp/guzzle": "^6.0",
+      "illuminate/support": "^5.5|^6.0|^7.0"
+    },
+    "require-dev": {
+      "roave/security-advisories": "dev-master",
+      "brianium/paratest": "^1.1|^2.2|^3.1|^4.0",
+      "mockery/mockery": "^1.0",
+      "mattc/coding-standards": "^1.0",
+      "orchestra/testbench": "^3.4|^4.0|^5.0",
+      "phpunit/phpunit": "^7.0|^8.0",
+      "spatie/phpunit-snapshot-assertions": "2.2.1"
+    },
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://composer.mattc.dev"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Laralabs\\HereOAuth\\": "src/"
+      },
+      "files": [
+        "src/Helpers/helpers.php"
+      ]
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Laralabs\\HereOAuth\\Tests\\": "tests/"
+      }
+    },
+    "scripts": {
+      "phpcs": "vendor/bin/phpcs ./src ./tests --ignore=*.blade.php,database/migrations/*,**/__snapshots__/* --standard=./vendor/mattc/coding-standards/phpcs.xml",
+      "test": "vendor/bin/paratest"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Laralabs\\HereOAuth\\HereOAuthServiceProvider"
+        ],
+        "aliases": {
+          "HereOAuth": "Laralabs\\HereOAuth\\Facades\\HereOAuth"
+        }
+      }
+    }
+  }

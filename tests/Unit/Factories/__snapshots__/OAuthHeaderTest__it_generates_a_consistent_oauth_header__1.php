@@ -1,0 +1,1 @@
+<?php return 'OAuth oauth_consumer_key="1234",oauth_nonce="extraterrestrial",oauth_signature_method="HMAC-SHA256",oauth_timestamp="1584363600",oauth_version="1.0",oauth_signature="iqcjTs2JDV7NeHZT37VVixYE5dbLy60EwiCtB2AMqJU%3D"';
