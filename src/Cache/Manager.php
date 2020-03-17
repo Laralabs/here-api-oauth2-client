@@ -28,6 +28,8 @@ class Manager
 
     public function store(string $token, int $expiry): bool
     {
-        return $this->cache->put(self::CACHE_KEY, encrypt($token), $expiry - 10);
+        $this->cache->put(self::CACHE_KEY, encrypt($token), $expiry - 10);
+
+        return $this->cache->has(self::CACHE_KEY);
     }
 }

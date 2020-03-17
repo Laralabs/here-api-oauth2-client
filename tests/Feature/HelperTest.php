@@ -5,12 +5,12 @@ namespace Laralabs\HereOAuth\Tests\Feature;
 use Laralabs\HereOAuth\Cache\Manager;
 use Laralabs\HereOAuth\Tests\TestCase;
 
-class HelperMethodTest extends TestCase
+class HelperTest extends TestCase
 {
     /** @test */
     public function it_can_run_the_helper_function_and_get_an_access_token_back(): void
     {
-        cache()->put(Manager::CACHE_KEY, encrypt('1234'));
+        app(Manager::class)->store('1234', 85000);
 
         $result = getHereApiToken();
 

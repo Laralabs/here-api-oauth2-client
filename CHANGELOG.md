@@ -3,10 +3,20 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - XX-XX-XXXX
+## [1.0.0] - 17-03-2020
 ### Added
-- List Changes
+- EVERYTHING.
 ### Changed
-- List Changes
+- N/A
 ### Removed
-- List Changes
+- N/A
+
+## [1.0.1] - 17-03-2020
+### Added
+- N/A
+### Changed
+- Use `has()` to deal with the return type hint.
+- Update tests to not use the cache helper.
+- Use `Carbon::createFromTimestamp` instead of `Carbon::parse()` for testing timestamp.
+### Removed
+- N/A
