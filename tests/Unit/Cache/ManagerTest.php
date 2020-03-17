@@ -29,21 +29,21 @@ class ManagerTest extends TestCase
     }
 
     /** @test */
-    public function it_can_retrieve_a_stored_access_token_from_the_cache(): void
-    {
-        cache()->put(Manager::CACHE_KEY, encrypt('1234'), 85000);
-
-        $result = $this->manager->retrieve();
-
-        $this->assertEquals('1234', $result);
-    }
-
-    /** @test */
     public function it_can_store_an_encrypted_access_token_in_the_cache(): void
     {
         $this->manager->store('1234', 85000);
 
         $this->assertNotEquals('1234', cache(Manager::CACHE_KEY));
         $this->assertEquals('1234', decrypt(cache(Manager::CACHE_KEY)));
+    }
+
+    /** @test */
+    public function it_can_retrieve_a_stored_access_token_from_the_cache(): void
+    {
+        $this->manager->store('1234', 85000);
+
+        $result = $this->manager->retrieve();
+
+        $this->assertEquals('1234', $result);
     }
 }

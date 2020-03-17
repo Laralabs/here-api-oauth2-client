@@ -87,7 +87,7 @@ class OAuthHeaderTest extends TestCase
 
         $timestamp = $this->header->getTimestamp();
 
-        $this->assertEquals('16-03-2020 13:00', Carbon::parse($timestamp)->format('d-m-Y H:i'));
+        $this->assertEquals('16-03-2020 13:00', Carbon::createFromTimestamp($timestamp)->format('d-m-Y H:i'));
     }
 
     /** @test */

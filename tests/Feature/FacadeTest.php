@@ -11,7 +11,7 @@ class FacadeTest extends TestCase
     /** @test */
     public function it_can_get_the_access_token_via_the_facade(): void
     {
-        cache()->put(Manager::CACHE_KEY, encrypt('1234'));
+        app(Manager::class)->store('1234', 85000);
 
         $result = HereOAuth::getToken();
 
