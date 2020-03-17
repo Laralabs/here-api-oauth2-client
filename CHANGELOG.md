@@ -17,5 +17,6 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Changed
 - Use `has()` to deal with the return type hint.
 - Update tests to not use the cache helper.
+- Use `Carbon::createFromTimestamp` instead of `Carbon::parse()` for testing timestamp.
 ### Removed
 - N/A
