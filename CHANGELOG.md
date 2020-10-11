@@ -20,3 +20,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 - Use `Carbon::createFromTimestamp` instead of `Carbon::parse()` for testing timestamp.
 ### Removed
 - N/A
+
+
+## [2.0.0] - 11-10-2020
+### Added
+- Laravel 8 Support
+### Changed
+- N/A
+### Removed
+- PHP 7.2 Support
