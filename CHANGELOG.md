@@ -29,3 +29,13 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 - N/A
 ### Removed
 - PHP 7.2 Support
+
+
+## [2.0.1] - 11-10-2020
+### Added
+- PHP 8.0 + 8.1 Support
+- Laravel 9 Support
+### Changed
+- N/A
+### Removed
+- N/A
