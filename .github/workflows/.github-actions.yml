@@ -39,7 +39,7 @@ jobs:
       - name: Execute PHP_CodeSniffer
         run: |
           php -v
-          composer test-quality
+          composer phpcs
 
   phpunit:
     strategy:
