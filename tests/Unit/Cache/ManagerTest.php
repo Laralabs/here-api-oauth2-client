@@ -8,10 +8,7 @@ use Laralabs\HereOAuth\Tests\TestCase;
 
 class ManagerTest extends TestCase
 {
-    /**
-     * @var Manager
-     */
-    protected $manager;
+    protected ?Manager $manager = null;
 
     protected function setUp(): void
     {

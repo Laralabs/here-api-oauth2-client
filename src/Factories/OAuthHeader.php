@@ -8,65 +8,29 @@ use Laralabs\HereOAuth\Exceptions\InvalidHereApiAccessSecret;
 
 class OAuthHeader
 {
-    /**
-     * @var string
-     */
-    protected $accessId;
+    protected string $accessId;
 
-    /**
-     * @var string
-     */
-    protected $accessSecret;
+    protected string $accessSecret;
 
-    /**
-     * @var OAuthHeader
-     */
-    protected $header;
+    protected ?OAuthHeader $header = null;
 
-    /**
-     * @var string
-     */
-    protected $tokenUrl;
+    protected string $tokenUrl;
 
-    /**
-     * @var string
-     */
-    protected $nonce;
+    protected string $nonce;
 
-    /**
-     * @var string
-     */
-    protected $signatureMethod = 'HMAC-SHA256';
+    protected string $signatureMethod = 'HMAC-SHA256';
 
-    /**
-     * @var string
-     */
-    protected $version = '1.0';
+    protected string $version = '1.0';
 
-    /**
-     * @var string
-     */
-    protected $httpMethod = 'POST';
+    protected string $httpMethod = 'POST';
 
-    /**
-     * @var string
-     */
-    protected $baseString = '';
+    protected string $baseString = '';
 
-    /**
-     * @var array
-     */
-    protected $parameters;
+    protected array $parameters = [];
 
-    /**
-     * @var string
-     */
-    protected $paramString = '';
+    protected string $paramString = '';
 
-    /**
-     * @var string
-     */
-    protected $headerString = '';
+    protected string $headerString = '';
 
     public function __construct(?string $accessId, ?string $accessSecret, string $tokenUrl)
     {

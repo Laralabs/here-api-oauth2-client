@@ -8,10 +8,7 @@ use Laralabs\HereOAuth\Factories\HereOAuthToken;
 
 class HereOAuth
 {
-    /**
-     * @var Cache
-     */
-    protected $cache;
+    protected Cache $cache;
 
     public function __construct(Cache $cache)
     {

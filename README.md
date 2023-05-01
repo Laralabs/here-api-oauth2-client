@@ -3,9 +3,10 @@
 </p>
 <p align="center">
 <a href="https://packagist.org/packages/laralabs/here-api-oauth2-client"><img src="https://poser.pugx.org/laralabs/here-api-oauth2-client/version" alt="Stable Build" /></a>
-<a href="https://travis-ci.org/Laralabs/here-api-oauth2-client"><img src="https://travis-ci.org/Laralabs/here-api-oauth2-client.svg?branch=master" alt="Build Status"></a>
+<a href="https://github.com/Laralabs/here-api-oauth2-client/actions"><img src="https://github.com/Laralabs/here-api-oauth2-client/actions/workflows/.github-actions.yml/badge.svg" alt="CI Status" /></a>
 <a href="https://codeclimate.com/github/Laralabs/here-api-oauth2-client/maintainability"><img src="https://api.codeclimate.com/v1/badges/c4e20b9e6d9fc66e949c/maintainability" /></a>
 <a href="https://codeclimate.com/github/Laralabs/here-api-oauth2-client/test_coverage"><img src="https://api.codeclimate.com/v1/badges/c4e20b9e6d9fc66e949c/test_coverage" /></a>
+<a href="https://codecov.io/gh/Laralabs/here-api-oauth2-client"><img src="https://codecov.io/gh/Laralabs/here-api-oauth2-client/branch/master/graph/badge.svg?token=LZ3SIO46CN"/></a>
 </p>
 
 ## HERE API OAuth 2.0 Client
