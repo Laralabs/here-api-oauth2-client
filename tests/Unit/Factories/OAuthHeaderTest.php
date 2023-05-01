@@ -14,10 +14,7 @@ class OAuthHeaderTest extends TestCase
 {
     use MatchesSnapshots;
 
-    /**
-     * @var FakeOAuthHeader
-     */
-    protected $header;
+    protected ?FakeOAuthHeader $header = null;
 
     protected function setUp(): void
     {

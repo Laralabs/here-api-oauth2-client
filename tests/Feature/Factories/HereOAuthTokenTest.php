@@ -9,10 +9,7 @@ use Laralabs\HereOAuth\Tests\TestCase;
 
 class HereOAuthTokenTest extends TestCase
 {
-    /**
-     * @var FakeHereOAuthToken
-     */
-    protected $factory;
+    protected ?FakeHereOAuthToken $factory = null;
 
     protected function setUp(): void
     {
