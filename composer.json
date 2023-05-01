@@ -43,7 +43,7 @@
       }
     },
     "scripts": {
-      "phpcs": "vendor/bin/phpcs ./src ./tests --ignore=*.blade.php,database/migrations/*,**/__snapshots__/* --standard=./vendor/mattc/coding-standards/phpcs.xml",
+      "phpcs": "vendor/bin/phpcs ./src ./tests --ignore=*.blade.php,database/migrations/*,**/__snapshots__/* --standard=./vendor/clntdev/coding-standards/phpcs.xml",
       "test": "vendor/bin/paratest"
     },
     "extra": {

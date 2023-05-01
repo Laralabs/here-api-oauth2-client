@@ -10,30 +10,15 @@ use Laralabs\HereOAuth\Exceptions\ErrorRetrievingHereApiToken;
 
 class HereOAuthToken
 {
-    /**
-     * @var OAuthHeader
-     */
-    protected $header;
+    protected OAuthHeader $header;
 
-    /**
-     * @var string
-     */
-    protected $tokenUrl;
+    protected string $tokenUrl;
 
-    /**
-     * @var Client
-     */
-    protected $client;
+    protected Client $client;
 
-    /*
-     * @var int
-     */
-    protected $attempts = 0;
+    protected int $attempts = 0;
 
-    /**
-     * @var int
-     */
-    protected $maxAttempts = 4;
+    protected int $maxAttempts = 4;
 
     public function __construct(OAuthHeader $header, string $tokenUrl)
     {
@@ -50,7 +35,7 @@ class HereOAuthToken
     private function getAccessToken(): ?array
     {
         try {
-            $this->attempts++;
+            $this->attempts += 1;
             $response = $this->client->request('POST', $this->tokenUrl, [
                 'form_params' => [
                     'grant_type' => 'client_credentials',
