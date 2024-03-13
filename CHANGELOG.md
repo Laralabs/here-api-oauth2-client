@@ -50,3 +50,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Removed
 - PHP 8.0 Support
 - Laravel 5.5 - 9 Support
+
+## [3.0.1] - 13-03-2024
+### Added
+- Laravel 11 Support
+- GH Actions CI PHP 8.3
+### Changed
+- N/A
+### Removed
+- N/A
