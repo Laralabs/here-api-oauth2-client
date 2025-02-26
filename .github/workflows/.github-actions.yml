@@ -15,8 +15,9 @@ on:
 jobs:
   phpcs:
     strategy:
+      fail-fast: false
       matrix:
-        version: ['8.1', '8.2', '8.3']
+        version: ['8.1', '8.2', '8.3', '8.4']
     runs-on: ubuntu-latest
 
     steps:
@@ -43,8 +44,9 @@ jobs:
 
   phpunit:
     strategy:
+      fail-fast: false
       matrix:
-        version: ['8.1', '8.2', '8.3']
+        version: ['8.1', '8.2', '8.3', '8.4']
     runs-on: ubuntu-latest
 
     steps:
@@ -77,10 +79,3 @@ jobs:
         run: |
           export CODECOV_TOKEN=${{ secrets.CODECOV_TOKEN }}
           bash <(curl -s https://codecov.io/bash) || echo 'Codecov failed to upload'
-
-      - name: Upload log artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: logs
-          path: ~/storage/logs
-          retention-days: 3
